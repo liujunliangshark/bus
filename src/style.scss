@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 1024px;
+  font-family: var(--el-font-family);
+}
+
+.el-overlay .el-dialog {
+  width: 736px;
+  min-width: 736px;
+  min-height: 684px;
+  max-height: 868px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 9px 3px, rgb(214, 214, 214) 0px 0px 0px 1px inset;
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+
+.el-dialog__body .content {
+  display: flex;
+  justify-content: space-between;
+  height: 676px;
+
+  .Hiddens {
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 326px;
+    height: 100%;
+    overflow-y: hidden;
+    box-shadow: rgb(214, 214, 214) 0px 0px 0px 1px inset;
+
+    .title {
+      font-size: 12px;
+      padding: 13px 20px 12px;
+      box-shadow: rgb(214, 214, 214) 0px -1px 0px 0px inset;
+    }
+
+    .main {
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      flex-direction: column;
+      box-sizing: border-box;
+      overflow-y: hidden;
+      flex: 1 1 0%;
+      overflow-y: scroll;
+      padding: 8px 20px;
+
+      .list_Box {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 8px 16px;
+        box-shadow: rgb(227, 227, 227) 0px 0px 0px 1px inset;
+        margin-bottom: 8px;
+        font-size: 12px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(133, 181, 248);
+          color: #fff;
+        }
+
+        .listtitle {
+          flex: 1;
+          margin-left: 10px;
+        }
+      }
+
+      .hiden_empty {
+        text-align: center;
+        line-height: 600px;
+        font-size: 12px;
+        color: #929292;
+      }
+    }
+  }
+
+  .reveal {
+    height: 100%;
+    width: 326px;
+    border: 1px dashed rgb(214, 214, 214);
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+
+    .title {
+      font-size: 12px;
+      padding: 13px 20px 12px;
+      box-shadow: rgb(214, 214, 214) 0px -1px 0px 0px inset;
+    }
+
+    .top {
+      border-bottom: 1px solid rgb(214, 214, 214);
+
+      .top_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        color: rgb(141, 141, 141);
+
+        span {
+          i {
+            font-style: normal;
+            color: #000;
+          }
+        }
+      }
+
+      .top_main {
+        padding: 0 20px;
+
+        .default_li {
+          display: flex;
+          align-items: center;
+          border-radius: 4px;
+          padding: 8px 16px;
+          box-shadow: rgb(227, 227, 227) 0px 0px 0px 1px inset;
+          margin-bottom: 8px;
+          color: rgb(141, 141, 141);
+          justify-content: space-between;
+        }
+
+        .default_li:last-child {
+          margin-bottom: 14px;
+        }
+
+        .list_Box {
+          display: flex;
+          align-items: center;
+          border-radius: 4px;
+          padding: 8px 16px;
+          box-shadow: rgb(227, 227, 227) 0px 0px 0px 1px inset;
+          margin-bottom: 8px;
+          font-size: 12px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(133, 181, 248);
+            color: #fff;
+          }
+
+          .listtitle {
+            flex: 1;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      flex: 1 1 0%;
+      overflow: hidden;
+
+      .bottom_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+
+        span {
+          i {
+            font-style: normal;
+            color: #000;
+          }
+        }
+      }
+
+      .bottom_main {
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        flex-direction: column;
+        box-sizing: border-box;
+        flex: 1;
+        height: 90%;
+        padding: 8px 20px;
+        overflow-y: auto;
+
+        .list_Box {
+          display: flex;
+          align-items: center;
+          border-radius: 4px;
+          padding: 8px 16px;
+          box-shadow: rgb(227, 227, 227) 0px 0px 0px 1px inset;
+          margin-bottom: 8px;
+          font-size: 12px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(133, 181, 248);
+            color: #fff;
+          }
+
+          .listtitle {
+            flex: 1;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.n-popover {
+  width: 250px !important;
+  max-height: 300px;
+  overflow-y: auto;
+
+  .fuck {
+    h5 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 10px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
